@@ -5,6 +5,7 @@
 Bike-Share Project, a project from Udacity Nanodegree: Programming for Data Science with Python.
 
 ### Description
+This project is as a part of Udacity Nanodegree program for Data Science with Python. The Nanodegree covers python programming, SQL, comman line essentials and version control.
 This is a project related to bike-share in 3 different cities; Chicago, New York and Washington. It provides a general information about bike share statistics such s most frequent times of travel, most common month of travel and destinations.
 
 ### Files used
