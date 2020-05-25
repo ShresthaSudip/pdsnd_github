@@ -7,22 +7,22 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-MONTH_LIST = ['january',
-              'february',
-              'march',
-             'april',
-             'may',
-             'june',
-             'all']
+MONTH_LIST = ['Jan',
+              'Feb',
+              'Mar',
+             'Apr',
+             'May',
+             'Jun',
+             'All']
 
-DAY_LIST = ['monday',
-              'tuesday',
-              'wednesday',
-             'thursday',
-             'friday',
-             'saturday',
-            'sunday',
-            'all']
+DAY_LIST = ['Mon',
+              'Tue',
+              'Wed',
+             'Thu',
+             'Fri',
+             'Sat',
+            'Sun',
+            'All']
 
 def get_filters():
     """
@@ -45,7 +45,7 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
     while True:
-        month = input("Please provide mont name (all, january, february.....,june): ").lower()
+        month = input("Please provide mont name (All, Jan, Feb.....,Jun): ").lower()
         if month not in MONTH_LIST:
             print('Sorry, please provide correct month or all')
             continue
@@ -54,7 +54,7 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input("Please provide day of week (all, monday...sunday): ").lower()
+        day = input("Please provide day of week (All, Mon...Sun): ").lower()
         if day not in DAY_LIST:
             print('Sorry, please privde all or valid day name')
             continue
