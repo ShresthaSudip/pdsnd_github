@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+05/25/2020
 
 ### Project Title
-Replace the Project Title
+Bike-Share Project
 
 ### Description
-Describe what your project is about and what it does
+This is a project related to bike-share in 3 different cities; Chicago, New York and Washington. It provides a general information about bike share statistics such s most frequent times of travel, most common month of travel and destinations. 
 
 ### Files used
-Include the files used
+new_york_city.csv, chicago.csv and washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thank you Udacity for excellent Nanodegree which helped to understand git and GitHub. The data is provided by Motivate, which is a bike share system provider for many cities in the United States.
 
