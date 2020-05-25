@@ -1,3 +1,4 @@
+# Import necessary libraries
 import time
 import pandas as pd
 import numpy as np
@@ -41,7 +42,7 @@ def get_filters():
             continue
         else:
             break
- 
+
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input("Please provide mont name (all, january, february.....,june): ").lower()
@@ -80,19 +81,19 @@ def load_data(city, month, day):
     # Convert to date time format
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
-    
-    #Parsing month week name and hour from the start time 
+
+    #Parsing month week name and hour from the start time
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] =df['Start Time'].dt.weekday_name
     df['hour'] = df['Start Time'].dt.hour
-    
+
     # when applicable filter by month
     if month !='all':
-        month = MONTH_LIST.index(month) + 1 
+        month = MONTH_LIST.index(month) + 1
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
-    
-    # filter by day of week 
+
+    # filter by day of week
     if day !='all':
         # filter by day to create new dataframe
         df = df[df['day_of_week'] == day.title()]
@@ -143,10 +144,10 @@ def station_stats(df):
 
     # display most frequent combination of start station and end station trip
     df['routes'] = df['Start Station']+ " " + df['End Station']
-    
+
     comb_start_end_station = df['routes'].mode().values[0]
-    
-    print("The most commonly used combination of both start station and end station trip is: {}".format(df['routes'].mode().values[0])) 
+
+    print("The most commonly used combination of both start station and end station trip is: {}".format(df['routes'].mode().values[0]))
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
